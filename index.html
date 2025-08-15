@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhaya's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;
+0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Chhaya's Portfolio</div>
+        <!--    <div class="right">  -->
+                <ul id="sidemenu">
+                    <li><a href="#sidemenu">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        <!--    </div>   -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello, I'm<span class="purple"> Chhaya Valmik</span>
+                <div>and I'm </div>
+                <span id="element"></span>
+
+               <div class="buttons"> 
+                    <a href="CV_Resume.pdf" download class="btn">Download Resume</a>
+              <!----      <button class="btn">Download Resume</button>  -->
+                </div> 
+            </div>
+            <div class="rightSection">
+                <img src="javaLogo.png" alt="">
+            </div>
+        </section>
+    </main>
+
+<!--ABout Section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myPic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> 
+                        Hello, I am Chhaya Valmik and I'm proficient in Java with a strong foundation in Data Structures and Algorithms and web development technologies. I develop user-friendly and responsive web application. I have solved 170+ problem on LeetCode.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java <br>JavaScript <br>HTML, CSS</li>
+                            <li><span>Data Structures & Algorithms</span><br>Strong problem-solving ability</li>
+                            <li><span>Frameworks & Libraries</span><br>ReactJS</li>
+                            <li><span>DataBase</span><br>MySQL</li>
+                            <li><span>Development Tools & Platforms</span><br>Git & GitHub, IntelliJ IDEA, Visual Studio Code, Postman, Leetocde</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Task Allocation & Tracker</span><br>ReactJs, HTML, CSS, JS <br>https://github.com/chhaya-valmik/Task-Allocation-and-Tracker.gi<br>Developed a web-based frontend application to manage and monitor task assignments within an organization. Designed interactive and
+responsive interfaces enabling admins to assign, update, and manage tasks for employees, while employees can securely log in to view
+their assigned tasks and real-time updates. Focused on improving task transparency, internal communication, and user experience
+through an intuitive UI.
+ACHIEVEMENTS
+170+ P</li>
+                            <li><span>Appointment Management System in Hospital </span><br>Java, MySQL<br>Developed a Java-based Appointment Management System to streamline the process of booking and managing patient appointments
+in a hospital environment.
+Enabled patient's and doctor's details management, and appointment scheduling based on doctor availability and patient preferences.</li>
+                            <li><span>Amazon Clone Website</span><br>HTML, CSS <br>https://chhaya-valmik.github.io/Basic-Amazon/<br>
+Developed a fully responsive e-commerce website interface inspired by Amazon using only HTML and CSS. Focused on replicating real-world UI components including the header, product grid, categories, and footer. Demonstrated strong skills in responsive design using Flexbox and media queries.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Graduation [ 2022-2026 ]</span><br>B.tech from SIRT-E Bhopal, CGPA: 6.9</li>
+                            <li><span>12th [ 2022 ]</span><br>From CM Rise Model School Guna, 80.6%</li>
+                            <li><span>10th [ 2020 ]</span><br>From CM Rise Model School Guna, 92%</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Services-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Data Structures & Algorithms Problem Solving</h2>
+                    <p>With a strong foundation in DSA, I offer efficient solutions for problems involving arrays, linked lists, stacks, queues, sorting, trees, graphs, recursion, DP, and more. I also assist in code optimization, debugging and algorithm design to improve performance and reliability in applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Java Applications Development</h2>
+                    <p>I specialize in building Core Java based applications. I develop custom backend services and scalable applications logic.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Web Development</h2>
+                    <p>I design and develop responsive, interactive, and user friendly websites mainly using modern technologies like HTML, CSS, JavaScript and ReactJS. From static to dynamic Single-Page Applications. I ensure clean code and smooth performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                                                                                 
+    <!--contact-->
+    <div id="contact">                                                                                        
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>chhayavalmik7@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7869035705</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/chhaya-valmik-7748502b7"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_chhaya0.5_?igsh=MWx2ZHRmc3AxdDZjMQ=="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<a href="">Download Resume</a>-->
+
+
+    <footer>
+        <div class="copyright">
+           <p>Copyright &#169;Chhaya, Made by<i class="fa-solid fa-heart"></i>Chhaya Valmik</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['proficient in Java', ' and good DSA problem solver and frontend developer'],
+          typeSpeed: 50,
+        });
+      </script>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+
+            document.getElementById(tabname).classList.add("active-tab");
+            
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-300px";
+        }
+    </script>
+
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbzdBRvyW_vHTda5tuf1pYgoCMK-szBfm__NPYpUZpptnPHxSOU5m0KcGt0oWTBvHJ88/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
